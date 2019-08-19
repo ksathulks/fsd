@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>count the occurrence of a substring</title>
+
+</head>
+<body>	
+		<label>String</label>
+        <input type="text" id="txt">
+        <label>SubString</label>
+		<input type="text" id="stxt">
+		<button onclick="fun()">count of substr</button>
+		
+	
+	
+	<script>
+		function fun(){
+			var a1 = document.getElementById("txt").value;
+            var sustr= document.getElementById("stxt").value;
+            var count=0;
+            
+            for(i=0;i<a1.length;i++){
+                
+                    if(a1.substring(i,i+sustr.length)==sustr){
+                        count++;
+                    }
+                
+            }
+			
+            alert(count);
+            
+                  
+			
+	  }
+	  
+	</script>
+</body>
+</html>

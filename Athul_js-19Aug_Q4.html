@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Title Case</title>
+
+</head>
+<body>	
+		<label>String</label>
+		<input type="text" id="txt">
+		<button onclick="fun()">Title Case</button>
+		
+	
+	
+	<script>
+		function fun(){
+			var a1 = document.getElementById("txt").value;
+			
+			var a2=a1.split("");
+			a2[0]=a2[0].toUpperCase();
+			for(i=0;i<a2.length;i++){
+                if(a2[i]==" "){
+                    a2[i+1]=a2[i+1].toUpperCase();
+                }
+            }
+			var a3=a2.join("");
+			alert(a3);    
+			
+	  }
+	  
+	</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Merge array and remove duplicates</title>
+
+</head>
+<body>	
+		
+		<button onclick="fun()">Merge array and remove duplicates</button>
+		
+	
+	
+	<script>
+		function fun(){
+			var a1=["1","2","3"];
+			var a2=["2","3","4"];
+			
+            var arr = a1.concat(a2);
+            var arr2 = [];
+            for(i=0;i<arr.length;i++){
+                repeatcount=0;
+                repeat=false;
+                for(j=0;j<arr.length;j++){
+                    if(arr[i]==arr[j]){
+                    repeatcount++;
+                    if(repeatcount>1){
+                        repeat=true;
+                        break;
+                    }
+                    
+                }
+                }
+                    if(repeat==false){
+                        arr2.push(arr[i]);
+                    }
+                }
+                
+                document.write("array one "+ a1+"   ");
+                document.write("array two "+ a2+"   ");
+                document.write("array after merging "+ arr+"   ");
+                document.write("array after deleting duplicates "+ arr2+"   ");
+               
+                  
+			
+	  }
+	  
+	</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>number to an array of digits</title>
+
+</head>
+<body>	
+		<label>Number</label>
+		<input type="number" id="num" min="1">
+		<button onclick="fun()">Convert to array</button>
+		
+	
+	
+	<script>
+		function fun(){
+            
+			var n1 = eval(document.getElementById("num").value);
+            var temp=n1;
+            var a=[];
+            var l;
+            var i=0;
+            while(temp>0){
+                l=(temp%10);
+                a[i]=l;
+                temp=Math.floor(temp/10);
+                i++;
+            }
+            a.reverse();
+			alert(a);
+			
+	  }
+	  
+	</script>
+</body>
+</html>

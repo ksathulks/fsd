@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>print all Non repeating char</title>
+
+</head>
+<body>	
+		<label>String</label>
+        <input type="text" id="txt">
+        
+		<button onclick="fun()">Not repeating char</button>
+		
+	
+	
+	<script>
+		function fun(){
+			var a1 = document.getElementById("txt").value;
+			var arr=[];
+            var repeat=false;
+            var repeatcount=0;
+            arr=a1.split("");
+            for(i=0;i<arr.length;i++){
+                repeatcount=0;
+                repeat=false;
+                for(j=0;j<arr.length;j++){
+                    if(arr[i]==arr[j]){
+                    repeatcount++;
+                    if(repeatcount>1){
+                        repeat=true;
+                        break;
+                    }
+                    
+                }
+                }
+                    if(repeat==false){
+                        document.write(arr[i])
+                    }
+                }
+               
+                
+            
+            
+                  
+			
+	  }
+	  
+	</script>
+</body>
+</html>

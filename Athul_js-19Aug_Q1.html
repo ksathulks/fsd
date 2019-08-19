@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Random Integer Lucky or Unlucky</title>
+
+</head>
+<body>	
+		<!-- <label>Number</label>
+		<input type="number" id="num" max="15" min="1"> -->
+		<h1 id="txt"></h1>
+		<button onclick="fun()">How Lucky are u ? </button>
+		
+	
+	
+	<script>
+		function fun(){
+            var m= eval(prompt("Enter a number"));
+			// var n1 = eval(document.getElementById("num").value);
+			var n1 = Math.floor(Math.random(1,15)*10);
+			document.getElementById("txt").innerText="Random number was "+ n1;
+			if(m==n1){
+                alert ("Right on");
+            } else alert("Unlucky");
+			
+	  }
+	  
+	</script>
+</body>
+</html>

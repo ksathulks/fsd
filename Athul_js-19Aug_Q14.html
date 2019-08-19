@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>String start with substr or not</title>
+
+</head>
+<body>	
+		<label>String</label>
+        <input type="text" id="txt">
+        <label>SubString</label>
+		<input type="text" id="stxt">
+        <button onclick="fun()">String start with substr or not</button>
+        <p id="para"></p>
+		
+	
+	
+	<script>
+		function fun(){
+			var a1 = document.getElementById("txt").value;
+            var sustr= document.getElementById("stxt").value;
+            var a1sustr=a1.substring(0, sustr.length);
+			
+                if(a1sustr.toString()==sustr.toString()){
+                    document.getElementById("para").innerText="Starts with Substring";
+                }
+                else if(a1sustr.toString()!=sustr.toString()){
+                    document.getElementById("para").innerText="Doesn't Start with Substring";
+                }
+          
+                  
+			
+	  }
+	  
+	</script>
+</body>
+</html>

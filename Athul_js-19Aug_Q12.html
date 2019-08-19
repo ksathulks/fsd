@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Day and Time</title>
+
+</head>
+<body>	
+		<!-- <label>Number</label>
+		<input type="number" id="num" max="15" min="1"> -->
+		<p>Today:</p><h1 id="day"></h1><br />
+		<p>Time is:</p><h1 id="time"></h1>
+		<button onclick="fun()">Show day and time</button>
+		
+	
+	
+	<script>
+		function fun(){
+            var today = new Date();
+             var day = today.getDay();
+             var dayarr = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+             document.getElementById("day").innerText=dayarr[day];
+             var hour = today.getHours();
+            var minute = today.getMinutes();
+            var second = today.getSeconds();
+            var ampm=(hour >= 12)? " PM ":" AM ";
+             document.getElementById("time").innerText=hour +" : "+ minute +" : "+ second +" : "+ ampm ;
+			
+	  }
+	  
+	</script>
+</body>
+</html>
