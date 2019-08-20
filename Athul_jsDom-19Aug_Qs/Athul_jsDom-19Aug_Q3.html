@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>href attribute value of last link</title>
+
+</head>
+<body>	
+        
+        <a href="www.google.com">Link 1</a>
+        <a href="www.yahoo.com">Link 2</a>
+        <a href="www.gmail.com">Link 3</a>
+        <button onclick="fun()">href attribute value of last link</button>
+        <h2 id="txt"></h2>
+
+        <script>
+		function fun(){
+			var a1 = document.getElementsByTagName("a");
+            var val=a1[a1.length-1].getAttribute("href");
+            document.getElementById("txt").innerText="href attribute value of last link : "+val;               
+	  }
+      </script>
+</body>
+</html>

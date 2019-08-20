@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>remove the option from combo dropdown</title>
+
+</head>
+<body>	
+        <select id="selected">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+        </select> 
+		<h3 id="txt"></h3>
+		<button onclick="fun()">remove the option from combo dropdown</button>
+		
+	
+	
+	<script>
+		function fun() {
+            var x = document.getElementById("selected");
+            x.remove(x.selectedIndex);
+            }
+    </script>
+</body>
+</html>

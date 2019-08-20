@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>toggle button(bootstrap)</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<body>
+	
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="Switch1" unchecked onclick="fun()">
+        <label class="custom-control-label" for="Switch1">Off/On</label>
+    </div>
+    <div id="img">
+            
+    </div>
+    <script>
+        function fun(){
+            if(document.getElementById("Switch1").checked==true){
+                document.getElementById("img").innerHTML='<img src="ibmLogo.png" alt="Image not loaded">';
+            }
+            else{
+                document.getElementById("img").innerHTML="";
+            }
+        }
+    </script>
+ </body>
+
+</html>
