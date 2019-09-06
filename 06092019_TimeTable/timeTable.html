@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="timeTable.js"></script>
+    <style type="text/css">
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+        <div>
+            <select id="class" onchange="whichClass(this.value)">
+                <option value="" selected>--select--</option>
+                <option value='class1'>Class 1</option>
+                <option value='class2'>Class 2</option>
+                <option value='class3'>Class 3</option>
+            </select>
+        </div>
+        <div id="table">            
+        </div>             
+              <fieldset>
+                    <legend>ADD/ EDIT Time Table</legend>
+                    <div>
+                        <p id="notification" style='color: red'></p>
+                        <div id="updateForm">                                
+                        </div>                        
+                        <select id="trainers">
+                            <option value="" selected>--select--</option>
+                        </select>
+                    </div>
+                    <input type="button" onclick="Update();" value="UPDATE"/>
+                </fieldset>  
+</body>
+</html>
